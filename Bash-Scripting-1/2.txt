@@ -1,0 +1,44 @@
+A bash script can be compared to a movie or theater performance script. Just like them, bash scripts have 3 core parts:
+    A Beginning
+    A Middle
+    An End
+    
+Bash Scripts always begin with what is called the 'Shebang'/'Bang' line. There must not be any blank line before this line. This line tells the shell what interpreter should be used to read the file.
+
+It starts with #! or Hash Bang(Shebang).
+It is then followed by path to the interpreter.  
+ 
+  
+ #!/bin/bash
+ 
+ Type file "filename" to get the type of file the shell thinks our script is written in. (change path to /user/bin/python3 and then run this command).
+ 
+ 
+ Then we write our commands.
+ 
+ The final core component of a script is the exit statement. This tells that the script has ended. However, by entering different exit codes it also tells the Shell whether the script has completed 
+ successfully or unsuccessfully.
+ 
+ 0 - Successful Execution.
+ Any Non Zero Exit Code(1 - 255) - Unsuccessful Execution.
+ 1 - Generic Error or Miscellaneous Error.
+ 
+It's not compulsary to add exit status to ypur script file. It's helpful but if you choose not to add an exit status, the shell will simply take the exit code of the last command it ran as the final exit code of the script.
+
+
+Now, to run the script you need to give execute permissions as Linux focuses a lot on security. It is very easy to do, but how you do it matters for the security of your system. 
+Command: 
+chmod +x "script name"
+This sets the execution permissions. Files with execution permission look different than normal files when you see the file using ls command.
+
+To run the script, type:
+./"script name"
+./ means "In this directory"
+
+
+Summary:
+All Bash Scipts have 3 core components:
+1. The shebang line(#1/bin/bash)
+2. Commands
+3. Exit Statement(0 = Successful; 1-255 = Unsuccessful)
+You learned how to give execution permission to your script(chmod +x "script name") and run them(./"script name")

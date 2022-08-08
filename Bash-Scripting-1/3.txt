@@ -1,0 +1,11 @@
+Commenting:
+# symbol is used to write inline comments in Bash Scripts.
+
+To make your script more professional you can add these 5 pieces of information:
+1. Author
+2. Date of Creation
+3. Date the script was last modified.
+4. Script Description.
+5. Script Usage
+
+Check script associated with this text file.

@@ -1,0 +1,43 @@
+What is a "Shell"?
+
+A Shell is:
+    "A program that interpretes the commannds you type in your terminal and passes them on to the operating system."
+    "The purpose of the shell is to make it more convenient for you to issue commands to your computer."
+    It is a command line interpreter that makes it wasy for you to issue commands to your operating system.   
+    
+    
+    
+What is Bash?
+
+BASH - Bourne Again Shell
+It is base on the Bourne Shell(sh), created by Stephen Bourne in 1979.
+As it is the improved version of the Bourne Shell, people thought it would be funny to call it Bourne Again Shell and hence it got its name.
+Bash is arguably the most commonly used Linux Shell today.
+
+
+
+
+Why BASH?
+
+1. It is feature-rich
+2. It is fast.
+3. It is very commmon.
+
+
+
+
+What is a Shell Script / Script?
+
+A Shell script is a file containing commands for the shell. The shell reads the script and executes the commands one by one, as if you entered them into the command line yourself.
+A Bash Script is simpy a file containing commands for the Bash Shell.
+
+
+
+
+Why use Scripts?
+
+The main reason is that writing scripts allows automation.
+Scripts are convenient ways to store sets of commands that allow you to automate tasks, save time and increase relaibility and make you more productive.
+
+
+

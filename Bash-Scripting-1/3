@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Author: Tushar Dimri
+# Date Created: 21/11/2021
+# Last Modified: 21/11/2021
+
+# Description:
+# Prints "This is my first script" to the terminal.
+
+# Usage:
+# ./3
+
+# Prints text to the screen
+echo "Hello World "
+exit 0

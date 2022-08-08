@@ -1,0 +1,24 @@
+File Permissions in Linux:
+File permissions determine who can perform certain actions on a given file.
+
+ls -l : This command lists us the contents od the given directory along with the permissions. 
+
+In Linux, file permissions are representd by 10 characters. The first chracter stands alone while the remaining 9 are broken up into 3 sets of 3: 
+
+
+1. The first character is either a hyphen or a d. If it is a hyphen then the entry is a file and if it is d then entry directory
+
+2. The next three characters represent the permissions that the file owner has for the file. The first character is for read and if we have read permission then we'll see an r and if we don't we'll see a hyphen. The second charater is for write permission and if we see a w then the file owner can modify the contents of the file. The third character is for execute permissions. Uf we see an x there then the file owner has execute permission for the file and run it like a script. (Owner is in the 2nd column)
+
+3. The next 3 set of characters represent the same permissions for the files group.  (Files group is in the 3rd column).
+
+3. The next 3 set represent the permissions for every other user who is not an owner neither a part of the files group.
+
+For bash scripts, it's recommened that only the file owner should have the permission to read,write and execute the file. Others should only be allowed to read. By not allowing anyone else to write to the script except the file owner, we prevent others from making sneaky changes to the script without the owner's knowledge. By not allowing anyone except the file owner to run the script, we can stop unwanted and unintended uses of the script on the system.
+
+To give our script recommended permissions, we use chmod command.
+chmod 744 script_name (script 3 in this case)
+Settings are: rwx r-- r--
+744 is an octal number and chmod command uses these as a way of expressing which permissions to set. You can use a calculator for selecting this octal number.
+
+We must give read permissions along with execute permission otherwise the shell won't be able to read the script and execute the commands it contains.
